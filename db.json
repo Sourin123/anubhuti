@@ -1,0 +1,98 @@
+{
+
+    "book_data":[
+        {
+            "id" : "1" ,
+            "name" : "BASUNDHARA TOMAY",
+            "img" : "https://m.media-amazon.com/images/I/41JqUlV4JzL._SX351_BO1,204,203,200_.jpg",
+            "author" : "BOHEMIAN",
+            "price" : "150.00" ,
+            "Publisher" :  "ANUVUTI PRAKASHAN (7 April 2022)",
+            "Language" :  "Bengali",
+            "Perfect Paperback"  :  "64 pages",
+            "ISBN-10"  :  "8195470734",
+            "ISBN-13"  :  "978-8195470730",
+            "Reading age"  :  "14 years and up",
+            "Country of Origin"  :  "India",
+            "Net Quantity"  :  "1.00 Piece",
+            "genre": "educational",
+            "genre" : "fantasy"
+
+
+        },
+        {   
+            
+        "id" : "2" ,
+        "name" : "The C Codebook",
+        "img" : "https://m.media-amazon.com/images/I/418EMBpKbAL._SX322_BO1,204,203,200_.jpg",
+        "author" : "Sadhana Chandra & Subhashis Kumar Chandra",
+        "price" : "299.00" ,
+        "Publisher" :  "ANUVUTI PRAKASHAN (31 July 2023)",
+        "Language" :  "English",
+        "Perfect Paperback"  :  "232 pages",
+        "ISBN-10"  :  "8195470777",
+        "ISBN-13"  :  "978-8195470778",
+        "Reading age"  :  "6 years and up",
+        "Country of Origin"  :  "India",
+        "Net Quantity"  :  "1.00 Piece",
+        "genre": "educational"
+
+
+        },
+        {    
+        "id" : "3" ,
+        "name" : "Linux: Version 2.4, 2.6 and 3.0 - for System Developers",
+        "img" : "https://m.media-amazon.com/images/I/41dkb8y4smL._SX331_BO1,204,203,200_.jpg",
+        "author" : "Bubai Das & Kunal Kumar Mandal",
+        "price" : "135.00" ,
+        "Publisher" :  "ANUVUTI PRAKASHAN (1 January 2021)",
+        "Language" :  "English",
+        "Perfect Paperback"  :  "80 pages",
+        "ISBN-10"  :  "8195470726",
+        "ISBN-13"  :  "978-8195470723",
+        "Reading age"  :  "14 years and up",
+        "Country of Origin"  :  "India",
+        "Net Quantity"  :  "1.00 Piece",
+        "genre": "educational",
+        "genre":"technical"
+
+        },
+        {    
+        "id" : "4" ,
+        "name" : "Programming in JAVA: Problems and Solutions",
+        "img" : "https://m.media-amazon.com/images/I/51hqlGFs4gL._SX322_BO1,204,203,200_.jpg",
+        "author" : "Santanu Mondal",
+        "price" : "150.00" ,
+        "Publisher" :  "ANUVUTI PRAKASHAN (28 February 2023)",
+        "Language" :  "English",
+        "Perfect Paperback"  :  "160 pages",
+        "ISBN-10"  :  "8195470769",
+        "ISBN-13"  :  "978-8195470761",
+        "Reading age"  :  "14 years and up",
+        "Country of Origin"  :  "India",
+        "Net Quantity"  :  "1.00 Piece",
+        "genre": "educational",
+        "genre":"technical"
+        
+
+        },
+        {    
+        "id" : "5" ,
+        "name" : "Shabdokunri",
+        "img" : "https://m.media-amazon.com/images/I/51ze+6gcrsL._SX328_BO1,204,203,200_.jpg",
+        "author" : "Editor-Ayan Banerji (Author), Ayan Banerji (Editor)",
+        "price" : "126.00" ,
+        "Publisher" :  "ANUVUTI PRAKASHAN (1 January 2021)",
+        "Language" :  "Bengali",
+        "Perfect Paperback"  :  "112 pages",
+        "ISBN-10"  :  "819547070X",
+        "ISBN-13"  :  "978-8195470709",
+        "Reading age"  :  "8 years and up",
+        "Country of Origin"  :  "India",
+        "Net Quantity"  :  "1.00 Piece",
+        "genre": "fantasy"
+        }
+        
+    ]
+
+}

@@ -5,9 +5,99 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
   </head>
   <body>
     <%- include('./assets/header') %>
+ <div class="container m-5 text-primary h2" style="padding-top:10px ; text-size-adjust: 36px;">
+  Newly Arrived 
+</div>
+    <div id="tbody" style="display: flex; overflow-y: hidden;">
+
+    </div>
+
+    <div class="container m-5 text-primary h2" style="padding-top:10px ; text-size-adjust: 36px;">
+      Featured 
+    </div>
+        <div id="Featured" style="display: flex; overflow-y: hidden;">
+    
+        </div>
+        <div class="container m-5 text-primary h2" style="padding-top:10px ; text-size-adjust: 36px;">
+          Top Academic 
+        </div>
+            <div id="Featured2" style="display: flex; overflow-y: hidden;">
+        
+            </div>
+
+
+
+
+
+
+
+<script>
+    let tbody = document.getElementById("tbody")
+    let Featured = document.getElementById("Featured")
+   
+
+      let item = document.getElementById("Featured2");
+
+      fetch("http://localhost:3000/book_data")
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log(data)
+            item.append(inse(data));
+        })
+    })
+
+
+
+  
+    fetch("http://localhost:3000/book_data")
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log(data)
+            tbody.append(inse(data));
+        })
+    })
+
+    fetch("http://localhost:3000/book_data?")
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+          
+          
+            Featured.append(inse(data));
+        })
+    })
+
+    function inse({img,name,author}){
+
+        let td = document.createElement('div')
+
+        td.innerHTML = `<div class="card-group ">
+      <div class="img_box card">
+        <img src="${img}" alt="Avatar" class="image" style="width: 200;">
+        <div class="overlay">
+          <div class="text" ><p> ${name} <br> ${author}
+          </p></div>
+        </div>
+    </div>
+
+   
+</div>`
+return td;
+
+    }
+
+</script>
+
+
+
+
+    </div>
 
     <%- include('./assets/footer') %>
   </body>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tbody" style="display: flex;">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script>
+    let tbody = document.getElementById("tbody")
+
+    fetch("http://localhost:3000/book_data")
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log(data)
+            tbody.append(inse(data));
+        })
+    })
+
+
+
+    function inse({img,name,author}){
+
+        let td = document.createElement('div')
+
+        td.innerHTML = `<div class="card-group ">
+      <div class="img_box card">
+        <img src="${img}" alt="Avatar" class="image" style="width: 200;">
+        <div class="overlay">
+          <div class="text" ><p> ${name} <br> ${author}
+          </p></div>
+        </div>
+    </div>
+
+   
+</div>`
+return td;
+
+    }
+
+</script>
+</body>
+</html>
