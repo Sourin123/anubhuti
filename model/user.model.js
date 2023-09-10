@@ -1,6 +1,6 @@
 const { Double } = require("mongodb");
 const mongo = require("mongoose");
-var url = "mongodb://127.0.0.1:27017/anubhuti";
+var url = "mongodb+srv://sourinsaha2001:4pGLHdvfCBDhuIuw@cluster0.gate6ou.mongodb.net/anubhuti";
 mongo.connect(url).then(console.log("connection successful" )).catch((err)=>{
     console.log(err);
 });

@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 
 
 // Define the database URL to connect to.
-const mongoDB = "mongodb://127.0.0.1:27017/anubhuti";
+const mongoDB = "mongodb+srv://sourinsaha2001:4pGLHdvfCBDhuIuw@cluster0.gate6ou.mongodb.net/anubhuti";
 let db = mongoose.connect(mongoDB,{
               useNewUrlParser : true,
               useUnifiedTopology : true

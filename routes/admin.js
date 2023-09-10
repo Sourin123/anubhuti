@@ -4,7 +4,7 @@ var BookModule = require('../model/user.model');
 
 
 //database connection
-var url = "mongodb://127.0.0.1:27017/anubhuti";
+var url = "mongodb+srv://sourinsaha2001:4pGLHdvfCBDhuIuw@cluster0.gate6ou.mongodb.net/anubhuti";
 const mongo = require("mongoose");
 mongo.connect(url);
 

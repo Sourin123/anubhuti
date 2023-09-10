@@ -11,7 +11,7 @@ var aboutRouter = require('./routes/about');
 var booksRouter = require('./routes/books');
 var adminRouter = require('./routes/admin');
 var mongo = require('mongoose');
-var url = "mongodb://127.0.0.1:27017/anubhuti";
+var url = "mongodb+srv://sourinsaha2001:4pGLHdvfCBDhuIuw@cluster0.gate6ou.mongodb.net/anubhuti";
 var conn = mongo.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true }); 
 
 
