@@ -10,7 +10,13 @@ var usersRouter = require('./routes/users');
 var aboutRouter = require('./routes/about');
 var booksRouter = require('./routes/books');
 var adminRouter = require('./routes/admin');
+var mongo = require('mongoose');
+var url = "mongodb://127.0.0.1:27017/anubhuti";
+var conn = mongo.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true }); 
+
+
 // 
+
 
 var app = express();
 

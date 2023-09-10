@@ -1,10 +1,13 @@
+const { Double } = require("mongodb");
 const mongo = require("mongoose");
 var url = "mongodb://127.0.0.1:27017/anubhuti";
-mongo.connect(url);
+mongo.connect(url).then(console.log("connection successful" )).catch((err)=>{
+    console.log(err);
+});
 const BookSchema = new mongo.Schema({
        
         "ISBN-13": {
-            type : Number
+            type : String
         },
         "name": {
             type : String,
@@ -43,6 +46,10 @@ const BookSchema = new mongo.Schema({
         },
         "genre":{
             type : String
+        },
+        "date" : {
+            type : Date,
+            default : Date.now  
         }
       
 });

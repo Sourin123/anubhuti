@@ -13,9 +13,9 @@
   Newly Arrived 
 </div>
     <div id="tbody" style="display: flex; overflow-y: hidden;">
-      <%  for (let book = 0; book < books.length; book++) {
-        // console.log(books);
-        const element = books[book];%>
+      <%  for (let book = 0; book < newly_arrived.length; book++) {
+        console.log(newly_arrived);
+        const element = newly_arrived[book];%>
         
        <div class="card-group ">
       <div class="img_box card">
@@ -31,7 +31,9 @@
 
         
         
-     <% }
+     <%
+     
+   }
      %>
      
   </div>
@@ -42,12 +44,59 @@
     </div>
         <div id="Featured" style="display: flex; overflow-y: hidden;">
     
+          <%  for (let new_books = 0; new_books < featured_books.length; new_books++) {
+        console.log(featured_books);
+        const new_bookss = featured_books[new_books];%>
+        
+       <div class="card-group ">
+      <div class="img_box card">
+        <img src="<%= new_bookss.img %>" alt="Avatar" class="image" style="width: 200;">
+        <div class="overlay">
+          <div class="text" ><p> <%= new_bookss.name %><br> <%= new_bookss.author %>
+          </p></div>
+        </div>
+    </div>
+
+   
+</div>
+
+        
+        
+     <%
+     
+   }
+     %>
+
         </div>
         <div class="container m-5 text-primary h2" style="padding-top:10px ; text-size-adjust: 36px;">
           Top Academic 
         </div>
             <div id="Featured2" style="display: flex; overflow-y: hidden;">
         
+              
+          <%  for (let academic_book = 0; academic_book < top_academic.length; academic_book++) {
+        console.log(featured_books);
+        const academic_books = featured_books[academic_book];%>
+        
+       <div class="card-group ">
+      <div class="img_box card">
+        <img src="<%= academic_books.img %>" alt="Avatar" class="image" style="width: 200;">
+        <div class="overlay">
+          <div class="text" ><p> <%= academic_books.name %><br> <%= academic_books.author %>
+          </p></div>
+        </div>
+    </div>
+
+   
+</div>
+
+        
+        
+     <%
+     
+   }
+     %>
+
             </div>
 
 
@@ -56,64 +105,7 @@
 
 
 
-// <script>
-//     let tbody = document.getElementById("tbody")
-//     let Featured = document.getElementById("Featured")
-   
 
-//       let item = document.getElementById("Featured2");
-
-//       fetch("http://localhost:3000/book_data")
-//     .then(res => res.json())
-//     .then(json => {
-//         json.map(data => {
-//             console.log(data)
-//             item.append(inse(data));
-//         })
-//     })
-
-
-
-  
-//     fetch("http://localhost:3000/book_data")
-//     .then(res => res.json())
-//     .then(json => {
-//         json.map(data => {
-//             console.log(data)
-//             tbody.append(inse(data));
-//         })
-//     })
-
-//     fetch("http://localhost:3000/book_data?")
-//     .then(res => res.json())
-//     .then(json => {
-//         json.map(data => {
-          
-          
-//             Featured.append(inse(data));
-//         })
-//     })
-
-//     function inse({img,name,author}){
-
-//         let td = document.createElement('div')
-
-//         td.innerHTML = `<div class="card-group ">
-//       <div class="img_box card">
-//         <img src="${img}" alt="Avatar" class="image" style="width: 200;">
-//         <div class="overlay">
-//           <div class="text" ><p> ${name} <br> ${author}
-//           </p></div>
-//         </div>
-//     </div>
-
-   
-// </div>`
-// return td;
-
-//     }
-
-// </script>
 
 
 

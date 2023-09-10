@@ -27,39 +27,40 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/',function (req,res,next) {
-  // var bookData =[{ 
-  //       "id": req.body.id,
-  //       "name": req.body.name,
-  //       "img": req.body.img,
-  //       "author" :req.body.author,
-  //       "price":req.body.price ,
-  //       "Language":req.body.Language ,
-  //       "Perfect Paperback":req.body.paperback ,
-  //       "ISBN-10":req.body.isbn_10 ,
-  //       "ISBN-13":req.body.isbn_13 ,
-  //       "Reading age":req.body.age ,
-  //       "Country of Origin":req.body.country ,
-  //       "Net Quantity":req.body.net_q ,
-  //       "genre":req.body.genre 
-  //     }]
-  var dataTest=[{
+  var bookData =[{ 
+        "ISBN-13": req.body.id,
+        "name": req.body.name,
+        "img": req.body.img,
+        "author" :req.body.author,
+        "price":req.body.price ,
+        "Language":req.body.Language ,
+        "Perfect Paperback":req.body.paperback ,
+        "ISBN-10":req.body.isbn_10 ,
+        "Reading age":req.body.age ,
+        "Country of Origin":req.body.country ,
+        "Net Quantity":req.body.net_q ,
+        "genre":req.body.genre
+        
+
+      }]
+  // var dataTest=[{
     
-    "ISBN-13": 9788195470730,
-    "name": "BASUNDHARA TOMAY",
-    "img": "https://m.media-amazon.com/images/I/41JqUlV4JzL._SX351_BO1,204,203,200_.jpg",
-    "author" : " BOHEMIAN ",
-    "price": "150.00",
-    "Language": "Bengali",
-    "Perfect Paperback": "64 pages",
-    "ISBN-10": 8195470734,
-    "Reading age": "14 years and up",
-    "Country of Origin": "India",
-    "Net Quantity": "1.00 Piece",
-    "genre": "love"
-  }]
+  //   "ISBN-13": 9788195470730,
+  //   "name": "BASUNDHARA TOMAY",
+  //   "img": "https://m.media-amazon.com/images/I/41JqUlV4JzL._SX351_BO1,204,203,200_.jpg",
+  //   "author" : " BOHEMIAN ",
+  //   "price": "150.00",
+  //   "Language": "Bengali",
+  //   "Perfect Paperback": "64 pages",
+  //   "ISBN-10": 8195470734,
+  //   "Reading age": "14 years and up",
+  //   "Country of Origin": "India",
+  //   "Net Quantity": "1.00 Piece",
+  //   "genre": "love"
+  // }]
       const main =async () =>{
             try {
-                 var data = await BookModule.insertMany(dataTest);
+                 var data = await BookModule.insertMany(bookData);
                  console.log(data);
                  res.redirect("/admin");
             } catch (error) {
