@@ -11,11 +11,11 @@ router.get('/', function(req, res, next) {
     const main = async () =>{
         try {
            
-            var featured_books = await BookModule.find({});
-            var newly_arrived = await BookModule.find({}).sort([['date', -1]]);
+            var featured_books = await BookModule.find({}).limit(6);
+            var newly_arrived = await BookModule.find({}).sort([['date', -1]]).limit(6);
             // console.log(" the book order is the following "+newly_arrived);
-            var top_academic = await BookModule.find({genre: "educational"});
-            console.log(" data of academic ................."+top_academic);
+            var top_academic = await BookModule.find({genre: "educational"}).limit(6);
+            // console.log(" data of academic ................."+top_academic);
         // console.log(books)
         res.render('index',{featured_books,newly_arrived,top_academic});
         } catch (error) {
