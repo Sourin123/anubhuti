@@ -1,11 +1,11 @@
 {
   "name": "bookretail",
   "version": "0.1.0",
-   "scripts": {
+  "scripts": {
     "predeploy": "npm run build",
     "start": "node ./bin/www start",
-    "build":"node ./bin/www build",
-    "dev": "nodemon ./bin/www"   
+    "build": "node ./bin/www build",
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
@@ -19,11 +19,12 @@
     "mongoose": "^7.5.0",
     "morgan": "~1.9.1",
     "nanoid": "^4.0.2",
+    "netlify": "^13.1.10",
+    "netlify-cli": "^12.14.0",
+    "netlify-lambda": "^2.0.15",
     "nodemon": "^3.0.1",
     "path": "^0.12.7",
     "range-parser": "^1.2.1",
-    "netlify-cli": "^12.7.2",
-    "netlify-lambda": "^2.0.15",
     "serverless-http": "^2.7.0"
   },
   "devDependencies": {
