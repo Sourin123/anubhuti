@@ -20,9 +20,11 @@
        <div class="card-group ">
       <div class="img_box card">
         <img src="<%= element.img %>" alt="Avatar" class="image" style="width: 200;">
+        <a href="/books?name=<%= element.name %>">
         <div class="overlay">
           <div class="text" ><p> <%= element.name %><br> <%= element.author %>
           </p></div>
+        </a>
         </div>
     </div>
 
@@ -51,9 +53,11 @@
        <div class="card-group ">
       <div class="img_box card">
         <img src="<%= new_bookss.img %>" alt="Avatar" class="image" style="width: 200;">
+        <a href="/books?name=<%= new_bookss.name %>">
         <div class="overlay">
           <div class="text" ><p> <%= new_bookss.name %><br> <%= new_bookss.author %>
           </p></div>
+        </a>
         </div>
     </div>
 
@@ -81,9 +85,11 @@
        <div class="card-group ">
       <div class="img_box card">
         <img src="<%= academic_books.img %>" alt="Avatar" class="image" style="width: 200;">
+        <a href="/books?name=<%= academic_books.name %>">
         <div class="overlay">
           <div class="text" ><p> <%= academic_books.name %><br> <%= academic_books.author %>
           </p></div>
+          </a>
         </div>
     </div>
 

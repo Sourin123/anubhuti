@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('bookretail:server');
 var http = require('http');
+var serverless = require("serverless-http");
 
 /**
  * Get port from environment and store in Express.

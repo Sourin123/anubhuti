@@ -1,10 +1,10 @@
 {
   "name": "bookretail",
   "version": "0.1.0",
+  "main": "./bin/www.js",
+  
   "scripts": {
-    "predeploy": "npm run build",
-    "start": "node ./bin/www start",
-    "build": "node ./bin/www build",
+    "start": "node ./bin/www ",
     "dev": "nodemon ./bin/www"
   },
   "dependencies": {

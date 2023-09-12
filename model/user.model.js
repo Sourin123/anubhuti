@@ -6,7 +6,7 @@ mongo.connect(url).then(console.log("connection successful" )).catch((err)=>{
 });
 const BookSchema = new mongo.Schema({
        
-        "ISBN-13": {
+        "ISBN13": {
             type : String
         },
         "name": {
@@ -27,21 +27,21 @@ const BookSchema = new mongo.Schema({
             type : String,
             uppercase : true
         },
-        "Perfect Paperback":{
+        "Perfect_Paperback":{
             type : String
         },
-        "ISBN-10": {
+        "ISBN10": {
             type : Number
         },
         
-        "Reading age": {
+        "Reading_age": {
             type : String
         },
-        "Country of Origin": {
+        "Country_of_Origin": {
             type : String,
             uppercase : true
         },
-        "Net Quantity": {
+        "Net_Quantity": {
             type : String
         },
         "genre":{
